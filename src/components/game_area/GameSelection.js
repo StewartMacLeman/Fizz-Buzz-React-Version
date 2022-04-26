@@ -1,14 +1,14 @@
 import React from "react";
 
-const GameSelection = () => {
+const GameSelection = (props) => {
   return (
-    <div className="gameSelectonCont">
+    <div className={props.showSelection ? "gameSelectonCont" : "hide"}>
       <h2>Select the type of game to play.</h2>
       <div className="gameSelcButtonsCont">
-        <button type="button" value="normal">
+        <button type="button" value="normal" onClick={props.gameSelection}>
           Normal
         </button>
-        <button type="button" value="random">
+        <button type="button" value="random" onClick={props.gameSelection}>
           Random
         </button>
       </div>

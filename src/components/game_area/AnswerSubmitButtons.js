@@ -1,8 +1,8 @@
 import React from "react";
 
-const AnswerSubmitButtons = () => {
+const AnswerSubmitButtons = (props) => {
     return (
-    <div className="answerSelectonCont">
+    <div className={props.showAnswerButtons ? "answerSelectonCont" : "hide"}>
       <h2>Answer Buttons.</h2>
       <div className="gameAnswerButtonsCont">
         <button type="button" value="fizz">Fizz</button>

@@ -107,7 +107,7 @@ h1, h2, h3, p, button, li {
  .userMessage {
    /* padding-left: .5rem;
    padding-right: 1rem; */
-   margin-bottom: .5rem;
+   margin-bottom: .25rem;
  }
  /* The game type selection / choice buttons area. ------------- */
  .gameSelectonCont, .answerSelectonCont {

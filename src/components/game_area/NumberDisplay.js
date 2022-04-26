@@ -2,7 +2,7 @@ import React from "react";
 
 const NumberDisplay = (props) => {
     return (
-        <p className="userMessage">Number: {props.displayedNumber}</p>
+        <p className={props.showNumber ? "userMessage" : "hide" }>Number: {props.displayedNumber}</p>
     )
 }
 
