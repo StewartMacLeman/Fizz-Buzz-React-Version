@@ -1,5 +1,136 @@
-body {
-  margin: 0;
-  background-color: aqua;
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
+body {
+  width: 80%;
+  min-height: 95vh;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+  border: .25rem solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#root {
+  flex: 1;
+  width: 100%;
+}
+
+h1 { font-size: 4rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.75rem; }
+p { font-size: 2rem; }
+button { font-size: 1.5rem; }
+li { font-size: 1.5rem; }
+
+h1, h2, h3, p, button, li {
+  font-family: futura, helvetica, sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  padding: .25rem;
+  background-color: none;
+}
+/* Button styles. ----------------------------------- */
+ button {
+   background-color: dodgerblue;
+   border-radius: 8px;
+   box-shadow: 1px 3px;
+ }
+ button:hover {
+   background-color: blue;
+   color: white;
+   cursor: pointer;
+ }
+ .butWidth {
+   width: 25%;
+   margin-bottom: .5rem;
+ }
+ /* Class hides the "Next Number" button. -------------- */
+ .disabledButton {
+   visibility: hidden;
+ }
+ /* Header section styles.---------------------------- */
+ .headerStyle {
+   width: 100%;
+   margin-bottom: 1rem;
+   background-color: LightYellow;
+   border-bottom: .25rem solid black;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ .headerStyle * {
+   margin-bottom: .5rem;
+ }
+ .titleStyle {
+   color: DarkOrange;
+   text-shadow: .125rem 0rem black, 0rem .125rem black, -.125rem 0rem black, 0rem -.125rem black;
+ }
+ .dropDownContainer {
+   width: 90%;
+   background-color: white;
+   border: .25rem solid DarkOrange;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ .dropDownContainer * {
+   margin-bottom: .25rem;
+   margin-top: 0;
+ }
+ .dropDownContainer button {
+   margin-bottom: .5rem;
+ }
+ .dropDownContainer h2, .divisibleCont h3 {
+   text-decoration: underline;
+ }
+ .playItem {
+   text-align: left;
+   margin-bottom: .15rem;
+ }
+ .divisibleCont * {
+   padding: .05rem;
+   margin-bottom: .05rem;
+ }
+ .divisibleCont p {
+   font-size: 1.5rem;
+ }
+ .divisibleCont p span {
+   text-decoration: underline;
+ }
+ /* The user message and number displays. ------------------- */
+ .userDisplay {
+   padding-left: .5rem;
+   padding-right: 1rem;
+   margin-bottom: 1rem;
+ }
+ /* The game type selection / choice buttons area. ------------- */
+ .gameSelectonCont, .answerSelectonCont {
+   min-width: 31rem;
+ }
+ .gameSelcButtonsCont, .gameAnswerButtonsCont {
+   display: flex;
+ }
+ .gameSelcButtonsCont button, .gameAnswerButtonsCont button {
+   width: 40%;
+   margin-top: .15rem;
+   margin-bottom: .15rem;
+ }
+ /* The hide class; used for hiding elements. -----------*/
+ .hide {
+   display: none;
+ }
+ /* Body and Font size queries.-------------------------- */
+ @media screen and (max-width: 850px){
+   html { font-size: 12px; }
+ }
+ @media screen and (max-width: 550px){
+   body { width: 100%; }
+   p { font-size: 1.75rem; }
+ }
