@@ -16,12 +16,10 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
 #root {
   flex: 1;
   width: 100%;
 }
-
 h1 { font-size: 4rem; }
 h2 { font-size: 1.75rem; }
 h3 { font-size: 1.75rem; }
@@ -47,9 +45,10 @@ h1, h2, h3, p, button, li {
    color: white;
    cursor: pointer;
  }
- .butWidth {
-   width: 25%;
-   margin-bottom: .5rem;
+ .startResetButtons {
+   width: 45%;
+   display: block;
+   margin: .5rem auto;
  }
  /* Class hides the "Next Number" button. -------------- */
  .disabledButton {
@@ -105,10 +104,10 @@ h1, h2, h3, p, button, li {
    text-decoration: underline;
  }
  /* The user message and number displays. ------------------- */
- .userDisplay {
-   padding-left: .5rem;
-   padding-right: 1rem;
-   margin-bottom: 1rem;
+ .userMessage {
+   /* padding-left: .5rem;
+   padding-right: 1rem; */
+   margin-bottom: .5rem;
  }
  /* The game type selection / choice buttons area. ------------- */
  .gameSelectonCont, .answerSelectonCont {
