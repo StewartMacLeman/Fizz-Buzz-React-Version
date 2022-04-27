@@ -5,7 +5,6 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
 body {
   width: 80%;
   min-height: 95vh;
@@ -20,12 +19,12 @@ body {
   flex: 1;
   width: 100%;
 }
-h1 { font-size: 4rem; }
+h1 { font-size: 3rem; }
 h2 { font-size: 1.75rem; }
 h3 { font-size: 1.75rem; }
-p { font-size: 2rem; }
+p { font-size: 1.55rem; }
 button { font-size: 1.5rem; }
-li { font-size: 1.5rem; }
+li { font-size: 1.25rem; }
 
 h1, h2, h3, p, button, li {
   font-family: futura, helvetica, sans-serif;
@@ -34,7 +33,7 @@ h1, h2, h3, p, button, li {
   padding: .25rem;
   background-color: none;
 }
-/* Button styles. ----------------------------------- */
+/* Button styles. --------------------------------------- */
  button {
    background-color: dodgerblue;
    border-radius: 8px;
@@ -50,11 +49,7 @@ h1, h2, h3, p, button, li {
    display: block;
    margin: .5rem auto;
  }
- /* Class hides the "Next Number" button. -------------- */
- .disabledButton {
-   visibility: hidden;
- }
- /* Header section styles.---------------------------- */
+ /* Header section styles.----------------------------------- */
  .headerStyle {
    width: 100%;
    margin-bottom: 1rem;
@@ -69,7 +64,7 @@ h1, h2, h3, p, button, li {
  }
  .titleStyle {
    color: DarkOrange;
-   text-shadow: .125rem 0rem black, 0rem .125rem black, -.125rem 0rem black, 0rem -.125rem black;
+   text-shadow: .125rem 0rem black, 0rem .125rem black, -.06rem 0rem black, 0rem -.06rem black;
  }
  .dropDownContainer {
    width: 90%;
@@ -98,7 +93,7 @@ h1, h2, h3, p, button, li {
    margin-bottom: .05rem;
  }
  .divisibleCont p {
-   font-size: 1.5rem;
+   font-size: 1.25rem;
  }
  .divisibleCont p span {
    text-decoration: underline;
@@ -111,10 +106,13 @@ h1, h2, h3, p, button, li {
    margin-bottom: .25rem;
    text-decoration: underline;
  }
- /* The game type selection / choice buttons area. ------------- */
+ /* The game type selection / answer buttons containers ----- */
  .gameSelectonCont, .answerSelectonCont {
    min-width: 31rem;
  }
+ .gameSelectonCont h2 {
+  margin-bottom: 1rem;
+}
  .gameSelcButtonsCont, .gameAnswerButtonsCont {
    display: flex;
  }
@@ -127,11 +125,37 @@ h1, h2, h3, p, button, li {
  .hide {
    display: none;
  }
- /* Body and Font size queries.-------------------------- */
+ /* Media queries --------------------------------------- */
  @media screen and (max-width: 850px){
    html { font-size: 12px; }
+   p { font-size: 1.75rem; }
  }
  @media screen and (max-width: 550px){
-   body { width: 100%; }
-   p { font-size: 1.75rem; }
+   body { width: 98%; }
+ }
+ @media screen and (max-width: 400px){
+  .gameSelectonCont h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    width: 80%;
+  }
+   p { 
+     font-size: 2rem;
+     width: 95%;
+    }
+  .number {
+    margin-bottom: 1rem;
+  }
+  .startResetButtons {
+    width: 65%;
+    margin: 1rem auto;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+  .gameSelcButtonsCont button, .gameAnswerButtonsCont button {
+    margin-top: .4rem;
+    margin-bottom: .4rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
  }
