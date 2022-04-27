@@ -105,9 +105,11 @@ h1, h2, h3, p, button, li {
  }
  /* The user message and number displays. ------------------- */
  .userMessage {
-   /* padding-left: .5rem;
-   padding-right: 1rem; */
    margin-bottom: .25rem;
+  }
+  .number {
+   margin-bottom: .25rem;
+   text-decoration: underline;
  }
  /* The game type selection / choice buttons area. ------------- */
  .gameSelectonCont, .answerSelectonCont {

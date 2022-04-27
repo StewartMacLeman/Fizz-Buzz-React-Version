@@ -6,6 +6,7 @@ const StartReset = (props) => {
       <button
         type="button"
         className={props.showStartButton ? "startResetButtons" : "hide"}
+        onClick={props.startGame}
       >
         {props.content}
       </button>
